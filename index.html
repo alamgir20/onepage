@@ -17,13 +17,24 @@
             background-color: #ffffff;
         }
         .header {
-            background-color: #0055b8;
-            color: white;
-            padding: 10px 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    background-color: #0055b8;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if the text is too long */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .header {
+        font-size: 12px; /* Reduce font size on mobile to fit the text in one line */
+    }
+}
+
         .timer-container {
             display: flex;
             flex-direction: column;
